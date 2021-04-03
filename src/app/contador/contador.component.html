@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light" style="background-color: #3f51b5 !important;">
     <a class="navbar-brand" href="#">
       <img src="assets/logo-mywebsite-urian-viera.svg" width="100" height="50" alt="">
     </a>
@@ -16,17 +16,27 @@
     <div class="row text-center  mt-5">
         <div class="col-md-12 col-12">
 
-    <button type="button" class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">
+    <!--<button (click)=" suma() " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">-->
+
+    <button (click)=" numero = numero + 1; " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">
         <i class="zmdi zmdi-plus"></i>
     </button>
 
-      <span> hola </span>
+      <span> {{ numero }} </span>
         
-    <button type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+    <button (click)=" numero = numero - 1; "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
         <i class="zmdi zmdi-minus"></i>
     </button>
 </div>
 
+
+
+<button (click)=" accionOperacion( +2 ) "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+    <i class="zmdi zmdi-minus"></i>
+</button> 
+<button (click)=" accionOperacion( -2 ) "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+    <i class="zmdi zmdi-minus"></i>
+</button>
 
 
 
