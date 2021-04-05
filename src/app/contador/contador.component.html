@@ -9,36 +9,57 @@
 
 
 
-  <div class="container">
-    <h5 class="text-center mt-5" id="titulo">Mi primer Contador con Angular</h5>
+<div class="container">
+
+    <div class="row text-center">
+        <div class="col-md-12 col-12 mt-5">
+            <h5 class="text-center" id="titulo">Mi primer Contador con Angular</h5>
+        </div>
+    </div>
+
 
 
     <div class="row text-center  mt-5">
         <div class="col-md-12 col-12">
+            <button (click)=" numero = numero; " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">
+                <i class="zmdi zmdi-plus"></i>
+            </button>
 
-    <!--<button (click)=" suma() " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">-->
+            <span> {{ numero }} </span>
+                
+            <button (click)=" numero = numero; "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+                <i class="zmdi zmdi-minus"></i>
+            </button>
+        </div>
 
-    <button (click)=" numero = numero + 1; " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">
-        <i class="zmdi zmdi-plus"></i>
-    </button>
+        <!---Accion de Operaciones con funciones-->
+        <div class="col-md-12 col- mt-5">
+            <h6 class="text-center" id="titulo">Operación con Función </h6>
 
-      <span> {{ numero }} </span>
-        
-    <button (click)=" numero = numero - 1; "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
-        <i class="zmdi zmdi-minus"></i>
-    </button>
-</div>
+            <button (click)=" sumar() "  class="btn btn-primary bmd-btn-fab bmd-btn-fab-sm">
+                <i class="zmdi zmdi-plus"></i>
+            </button> 
+            <button (click)=" restar() "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+                <i class="zmdi zmdi-minus"></i>
+            </button>
 
-
-
-<button (click)=" accionOperacion( +2 ) "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
-    <i class="zmdi zmdi-minus"></i>
-</button> 
-<button (click)=" accionOperacion( -2 ) "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
-    <i class="zmdi zmdi-minus"></i>
-</button>
+        </div>
 
 
+        <div class="col-md-12 col- mt-5">
+            
+            <h6 class="text-center" id="titulo">Acumulador de 5 en 5</h6>
 
+            <button (click)=" accionOperacion( +5 ) "  class="btn btn-primary bmd-btn-fab bmd-btn-fab-sm">
+                <i class="zmdi zmdi-plus"></i>
+            </button> 
+            <button (click)=" accionOperacion( -5 ) "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+                <i class="zmdi zmdi-minus"></i>
+            </button>
 
+        </div>
     </div>
+
+
+
+</div>

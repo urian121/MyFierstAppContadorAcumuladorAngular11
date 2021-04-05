@@ -11,19 +11,23 @@ export class ContadorComponent implements OnInit {
 
   numero:number = 15;
 
+
+  /***Funcion Sumar y Restar */
   sumar(){
     this.numero +=1;
   }
 
-  resta(){
+  restar(){
     this.numero -=1;
   }
+/**fin  */
 
 
   //espera un numero como respuesta
   accionOperacion( valor:number ){
     this.numero +=valor;
   }
+  
 
   ngOnInit(): void {
   }
