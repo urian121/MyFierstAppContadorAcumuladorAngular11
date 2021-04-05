@@ -4,7 +4,7 @@
     <a class="navbar-brand" href="#">
       <img src="assets/logo-mywebsite-urian-viera.svg" width="100" height="50" alt="">
     </a>
-    <h6 class="text-center"> Urian Viera</h6>
+    <h6 class="text-center">Ing. Urian Viera</h6>
   </nav>
 
 
@@ -21,13 +21,13 @@
 
     <div class="row text-center  mt-5">
         <div class="col-md-12 col-12">
-            <button (click)=" numero = numero; " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">
+            <button (click)=" numero = numero + 1; " class="btn btn-primary  bmd-btn-fab bmd-btn-fab-sm">
                 <i class="zmdi zmdi-plus"></i>
             </button>
 
             <span> {{ numero }} </span>
                 
-            <button (click)=" numero = numero; "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+            <button (click)=" numero = numero - 1; "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
                 <i class="zmdi zmdi-minus"></i>
             </button>
         </div>
